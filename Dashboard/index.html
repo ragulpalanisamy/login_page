@@ -2,59 +2,37 @@
 <html lang="en" >
 <html>
 <head>
-  <title>Login</title>
+  <title>Sign Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>  
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body class="body">
-	
-	<a href="https://github.com/Mehedi61/Login-form-Sign-up-form"></a>
-
-<div class="login-page">
-  <div class="form">
-
-    <form>
-      <lottie-player src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"  background="transparent"  speed="1"  style="justify-content: center;" loop  autoplay></lottie-player>
-      <input type="text" placeholder="&#xf007;  username"/>
-      <input type="password" id="password" placeholder="&#xf023;  password"/>
-      <i class="fas fa-eye" onclick="show()"></i> 
-      <br>
-      <br>
-      <button id="login-btn" href="dashbord.html">LOGIN</button>
-      <p class="message"></p>
-    </form>
-    <form id="login-form">
-      <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
-    </form>
+ 
+  <div id="signup">
+    <div class="login-page">
+     
+    <div class="form">
+        <form action="" autocomplete = "on" method='post'>
+          <h3 id="">!Register:</h3>
+          <div>
+            <input type="text" autofocus="on" placeholder="full name">
+            <input type="text" placeholder="email address" />
+            <input type="text" placeholder="pick a username" />
+            <input type="password" id="password" placeholder="set a password" />
+          </div>
+  
+        <button type="submit" id="signup"><a href="login.html">Sign Up</a></button>
+  
+      </form>
+    </div>
   </div>
-</div>
+  </div>
+  
 
-  <script src="main.js">
-    // Get the login button and form elements
-    const loginBtn = document.getElementById("login-btn");
-    const loginForm = document.getElementById("login-form");
-    
-    // Add an event listener to the login button
-    loginBtn.addEventListener("click", function() {
-      // Get the login details from the form
-      const email = loginForm.elements.email.value;
-      const password = loginForm.elements.password.value;
-    
-      // Validate the login details
-      if (email === "test@example.com" && password === "password") {
-        // Redirect to the dashboard page
-        window.location.href = "dashboard.html";
-      } else {
-        alert("Invalid login details. Please try again.");
-      }
-    });
-      </script>
+
+  
+  <script src="main.js"></script> 
 </body>
 </html>
