@@ -7,8 +7,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+section{
+  display: none;
+}
 
-
+section:target{
+  display: block;
+}
 .login-page {
   width: 360px;
   padding: 8% 0 0;
