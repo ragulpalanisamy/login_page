@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Single File</title>
+</head>
+<main>
+    
+    <section id="login1">
+        <div class="login-page">
+            <div class="form">
+              <form action="" onsubmit="return vali();" method="post">
+                <h3>..Welcome back!..</h3>
+                <div>
+                  <input type="text" autofocus="on" id="uname" placeholder="&#xf007;  username"/>
+                  <input type="password" id="pward" placeholder="&#xf023;  password"/> 
+                </div>
+                <div>
+                  <button type="submit" id="loginbutton">LOGIN</button>
+                  <button type="submit"><a href="#signup1">Sign Up</a> </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+    </section>
+    <section id="signup1">
+        <div id="signup" >
+            <div class="login-page">
+            <div class="form">
+                <form action="" onsubmit="return validate();" autocomplete = "on" method='post'>
+                  <h3 id="">!Register:</h3>
+                  <div>
+                    <input type="text" autofocus="on" placeholder="full name">
+                    <input type="text" id="email" placeholder="email address" />
+                    <input type="text" id="user" placeholder="pick a username" />
+                    <input type="password" id="password" placeholder="set a password" />
+                  </div>
+                <button type="submit" id="signup"><a href="#login1">Sign Up</a></button>
+              </form>
+            </div>
+          </div>
+          </div>
+    </section>
+    <section id="Dashboard">
+        <div id="dashboard" >
+            <h1>Top 10 Mobiles and Specifications</h1>
+         <table>
+           <tr>
+             <th>Mobile Name</th>
+             <th>Specifications</th>
+           </tr>
+           <tr>
+             <td>iPhone 12 Pro Max</td>
+             <td>
+               <ul>
+                 <li>6.7-inch Super Retina XDR display</li>
+                 <li>A14 Bionic chip</li>
+                 <li>Triple 12MP camera system with Night mode, Deep Fusion, and ProRes video</li>
+                 <li>5G capable</li>
+                 <li>256GB, 512GB, or 1TB storage options</li>
+               </ul>
+             </td>
+           </tr>
+           <tr>
+             <td>Samsung Galaxy S21 Ultra</td>
+             <td>
+               <ul>
+                 <li>6.8-inch Dynamic AMOLED 2X display</li>
+                 <li>Exynos 2100 or Snapdragon 888 processor</li>
+                 <li>Quad camera system with 108MP main camera, 3x optical zoom, and 8K video</li>
+                 <li>5G capable</li>
+                 <li>128GB, 256GB, 512GB, or 1TB storage options</li>
+               </ul>
+             </td>
+           </tr>
+           <tr>
+             <td>OnePlus 9 Pro</td>
+             <td>
+               <ul>
+                 <li>6.7-inch Fluid AMOLED display</li>
+                 <li>Snapdragon 888 processor</li>
+                 <li>Quad camera system with 48MP main camera, 3x optical zoom, and 4K video</li>
+                 <li>5G capable</li>
+                 <li>128GB or 256GB storage options</li>
+               </ul>
+             </td>
+           </tr>
+           <tr>
+             <td>Google Pixel 6 Pro</td>
+             <td>
+               <ul>
+                 <li>6.7-inch AMOLED display</li>
+                 <li>Titan M security chip</li>
+                 <li>Triple camera system with 64MP main camera, 3x optical zoom, and 8K video</li>
+                 <li>5G capable</li>
+                 <li>128GB or 256GB storage options</li>
+               </ul>
+             </td>
+           </tr>
+           <tr>
+             <td>Oppo Find X3 Pro</td>
+             <td>
+               <ul>
+                 <li>6.7-inch AMOLED display</li>
+                 <li>Snapdragon 888 processor</li>
+                 <li>Quad camera system with 50MP main camera, 3x optical zoom, and 8K video</li>
+                 <li>5G capable</li>
+                 <li>256GB storage</li>
+               </ul>
+             </td>
+           </tr>
+           <tr>
+           </div>
+    </section>
+    <script src="main.js"></script> 
+</main>
+</html>
