@@ -1,24 +1,23 @@
 
-document.getElementById("signup").onclick = function(){
-  window.location.assign("\login.html");
-}
+function validate(){
+let email = document.getElementById('email').value;
+let user = document.getElementById('user').value;
+let pass = document.getElementById('password').value;
 
-document.getElementById("sign").onclick = function(){
-  window.location.assign("\index.html");
-}
 
-document.getElementById("loginbutton").onclick = function(){
+function vali(){
 
-  let username = document.getElementById("uname").value;
-  let password = document.getElementById("password").value;
+  let username = document.getElementById( "uname").value;
+  let password = document.getElementById("pward").value;
 
-  if(username == "admin@gmail.com" && password == "admin123"){
-    window.location.assign("dashboard.html");
+  if((username == email || username == user) && password == pass){
+    window.location.assign("#Dashboard");
     alert("You Successfully LogedIn!.....");
   }
   else{
-    window.location.assign("index.html");
+    window.location.assign("#login1");
     alert("Invalid Details");
 
   }
+}
 }
